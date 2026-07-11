@@ -1,0 +1,53 @@
+{
+  "campaign": "cp_b3418643",
+  "role": "foundation",
+  "terminal_node": "4f8b530d-09e3-5f9c-a743-b6f7e3831130",
+  "foundation_nodes": {
+    "root": "a2ec1a9b-300d-593a-a5cf-1376af7cd68e",
+    "manifest": "17cf1655-c792-5f82-9c81-ff074d1ad399",
+    "rubric": "8bdd2110-f38a-5e9d-a07b-2404ad9c93ce",
+    "landscape": "2dd70292-3754-5910-8187-f8e970216f49",
+    "baseline": "34b3569e-f858-5131-b84c-14cd0107daa4"
+  },
+  "datasets": {
+    "berkeley_earth": {
+      "kaggle_slug": "berkeleyearth/climate-change-earth-surface-temperature-data",
+      "files": ["GlobalTemperatures.csv", "GlobalLandTemperaturesByCountry.csv", "GlobalLandTemperaturesByMajorCity.csv", "GlobalLandTemperaturesByCity.csv", "GlobalLandTemperaturesByState.csv"],
+      "date_range": "1750-01 to 2015-12",
+      "units": "Celsius",
+      "uncertainty_available": true
+    },
+    "daily_cities": {
+      "kaggle_slug": "sudalairajkumar/daily-temperature-of-major-cities",
+      "files": ["city_temperature.csv"],
+      "date_range": "1995 to 2020",
+      "units": "FAHRENHEIT",
+      "sentinel_missing": -99,
+      "year_anomalies": "Year values 200/201 are data entry errors (440 rows)"
+    }
+  },
+  "key_baselines": {
+    "global_land_warming_C": 1.08,
+    "warming_n_countries": 208,
+    "warming_std_dev_C": 0.16,
+    "dtr_change_C": -0.41,
+    "pre_1850_uncertainty_multiplier": 23
+  },
+  "prior_art_do_not_claim": [
+    "global mean warming ~1C since pre-industrial",
+    "Arctic amplification (high-latitude 2x faster)",
+    "DTR decline (nights warming faster than days)",
+    "Tambora/Year Without a Summer 1816"
+  ],
+  "open_questions_for_prospect": [
+    "Pre-Tambora 1808-1810 cold plunge (before 1815 eruption)",
+    "Countries with statistically significant post-1950 cooling",
+    "City coverage explosion timing and correlation with trends",
+    "Urban heat island quantification from daily city data",
+    "Seasonal asymmetry: winter warming faster than summer?",
+    "The 1950s-1970s plateau despite rising CO2",
+    "Rate of monthly record-breaking 2000-2013"
+  ],
+  "repo": "https://github.com/boxwheel/wx-claude-foundation",
+  "status": "done"
+}
