@@ -1,0 +1,43 @@
+{
+  "exploration_date": "2026-07-11",
+  "known_findings_in_data": [
+    {
+      "finding": "Global land warming 1851-1880 vs 1981-2013",
+      "value": "+1.08\u00b0C mean across 208 countries, std=0.16\u00b0C",
+      "classification": "WELL-KNOWN - do not pursue as a surprise"
+    },
+    {
+      "finding": "Arctic amplification: high-latitude countries warm faster",
+      "value": "Mongolia +1.60\u00b0C, Canada +1.56\u00b0C, Russia +1.51\u00b0C vs Ireland +0.72\u00b0C, Faroe Islands +0.71\u00b0C",
+      "classification": "WELL-KNOWN - do not pursue as a surprise"
+    },
+    {
+      "finding": "Minimum temperatures warming faster than maximum (DTR decline)",
+      "value": "Max +1.01\u00b0C vs Min +1.42\u00b0C (1851-1880 to 1981-2013), DTR decreased 0.41\u00b0C",
+      "classification": "KNOWN in science literature but quantifiable in this dataset - could be surprising + confirmable"
+    },
+    {
+      "finding": "Tambora/Year Without Summer signature",
+      "value": "1810-1819 decade mean 7.25\u00b0C vs preceding 8.48\u00b0C, 1816 individual year 6.94\u00b0C",
+      "classification": "WELL-KNOWN event, but the exact magnitude and recovery shape in this data could yield novel sub-questions"
+    },
+    {
+      "finding": "Global land temperature seasonality",
+      "value": "Jan 2.28\u00b0C to Jul 14.31\u00b0C - 12.03\u00b0C range",
+      "classification": "Expected - land dominated by N. Hemisphere"
+    },
+    {
+      "finding": "1780 appears in top 20 hottest years",
+      "value": "9.43\u00b0C - highly anomalous for pre-1850 period with unc ~2.6\u00b0C",
+      "classification": "Likely data artifact at high uncertainty - caveat required"
+    }
+  ],
+  "open_questions_flagged": [
+    "What caused the prolonged 1808-1820 cold period? Tambora was 1815, but cooling started ~1808",
+    "Does the DTR decline accelerate in specific seasons?",
+    "Are there countries with genuinely COOLING (negative warming rate) trends in this dataset?",
+    "What is the city-level coverage of the Berkeley Earth data and when did coverage explode?",
+    "Can the daily city data reveal which cities are warming faster than their surrounding country average (urban heat island)?",
+    "Is there a measurable signal of major ENSO events in the by-country data?"
+  ]
+}
