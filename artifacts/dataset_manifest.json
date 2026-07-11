@@ -1,0 +1,109 @@
+{
+  "datasets": [
+    {
+      "file": "GlobalTemperatures.csv",
+      "rows": 3192,
+      "cols": [
+        "dt",
+        "LandAverageTemperature",
+        "LandAverageTemperatureUncertainty",
+        "LandMaxTemperature",
+        "LandMaxTemperatureUncertainty",
+        "LandMinTemperature",
+        "LandMinTemperatureUncertainty",
+        "LandAndOceanAverageTemperature",
+        "LandAndOceanAverageTemperatureUncertainty",
+        "year"
+      ],
+      "date_range": [
+        "1750-01-01",
+        "2015-12-01"
+      ],
+      "nan_pct_land_avg": 0.0037593984962406013,
+      "nan_pct_land_ocean": 0.37593984962406013,
+      "uncertainty_by_period": {
+        "1750-1800": {
+          "n_months": 588,
+          "mean_uncertainty_C": 2.627
+        },
+        "1800-1850": {
+          "n_months": 600,
+          "mean_uncertainty_C": 1.481
+        },
+        "1850-1900": {
+          "n_months": 600,
+          "mean_uncertainty_C": 0.535
+        },
+        "1900-1950": {
+          "n_months": 600,
+          "mean_uncertainty_C": 0.251
+        },
+        "1950-2000": {
+          "n_months": 600,
+          "mean_uncertainty_C": 0.105
+        },
+        "2000-2050": {
+          "n_months": 192,
+          "mean_uncertainty_C": 0.085
+        }
+      }
+    },
+    {
+      "file": "GlobalLandTemperaturesByCountry.csv",
+      "rows": 577462,
+      "countries": 243,
+      "date_range": [
+        "1743-11-01",
+        "2013-09-01"
+      ],
+      "nan_pct": 0.05654224866744478
+    },
+    {
+      "file": "GlobalLandTemperaturesByMajorCity.csv",
+      "rows": 239177,
+      "cities": 100,
+      "countries": 49,
+      "date_range": [
+        "1743-11-01",
+        "2013-09-01"
+      ],
+      "nan_pct": 0.04599940629742826
+    },
+    {
+      "file": "GlobalLandTemperaturesByCity.csv",
+      "rows": 8599212,
+      "cities": 3448,
+      "countries": 159,
+      "date_range": [
+        "1743-11-01",
+        "2013-09-01"
+      ],
+      "nan_pct": 0.04234457761943769
+    },
+    {
+      "file": "city_temperature.csv",
+      "rows_total": 2906327,
+      "rows_after_sentinel_removal": 2826655,
+      "sentinel_pct": 0.02741329520043684,
+      "year_anomalies": {
+        "year_200_rows": 89,
+        "year_201_rows": 351
+      },
+      "year_range_clean": [
+        1995,
+        2020
+      ],
+      "cities": 321,
+      "countries": 125,
+      "note": "Temperatures in FAHRENHEIT. -99 is missing sentinel. Year values 200 and 201 are data entry errors (440 rows, discard)."
+    }
+  ],
+  "quality_warnings": [
+    "Berkeley Earth: uncertainty pre-1850 is 23x higher than post-1960 (2.05 vs 0.09 C). Claims about the earliest period must account for this.",
+    "Daily city dataset: temperatures in Fahrenheit (not Celsius). Convert: C = (F - 32) * 5/9.",
+    "Daily city dataset: -99 sentinel for missing values must be removed before analysis.",
+    "Daily city dataset: Year values 200 and 201 (440 rows total) are data entry errors; discard.",
+    "Berkeley Earth by-country/city: sparse and high-uncertainty before 1850.",
+    "Station composition changes over time can introduce apparent trends."
+  ]
+}
